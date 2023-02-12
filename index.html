@@ -4,10 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caudex&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <script src="script.js" defer></script>
+    <title>Etch a Sketch</title>
 </head>
 <body>
-    
+    <header class="header">
+        <h1>ETCH A SKETCH</h1>
+    </header>
+    <main>
+        <!-- Options Section containing all the buttons. -->
+        <section id="options">
+            <input type="color" name="color-picker" id="color-picker">
+            <button id="color-btn">Colour Mode</button>
+            <button id="rainbow-btn">Rainbow Mode</button>
+            <button id="eraser-btn">Eraser</button>
+            <button id="clear-btn">Clear Board</button>
+
+            <label for="grid-sizer">Adjust Grid Size</label>
+            <p id="size-display">16 x 16</p>
+            <input type="range" name="grd-sizer" id="grid-sizer">
+        </section>
+
+        <!-- Grid section -->
+        <section id="grid"></section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
